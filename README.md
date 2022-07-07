@@ -1,2 +1,5 @@
 - 👋 Olá, acesse o link abaixo para visualizar o resultado final.
 - https://mateus-burda.github.io/desenvolvimento-web/
+- Esse é o meu primeiro projeto em desenvolvimento web.
+- Estou satisfeito com o resultado considerando o tempo gasto.
+- Estou feliz com resultado da calculadora de valor feita no JavaScript, pois eu não tinha conhecimento nenhum antes de fazer.
