@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-img">
+            <img id="header-img" src="assets/foto.png">
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li id="nav-link"><a href="#pacotes">Pacotes</a></li>
+                <li id="nav-link"><a href="#">Espaço</a></li>
+                <li id="nav-link"><a href="#email-submit">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="conteudo">
+            <article id="video-container">
+                <iframe id="video" height="315" width="560" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+            </article>
+            
+            <article id="pacotes">
+                <div id="pacote-encantos">
+                   <h2 class="texto-pacotes">Pacote Encantos</h2>
+                   <img id="img-pacotes" alt="imagem pacote encantos" src="assets/encantos.jpeg">
+                   <a href="https://api.whatsapp.com/send?phone=554198872091&text=Tenho%20interessee%20nos%20pacotes!" target="_blank" id="btn-encantos">Tenho interesse</a>
+                <div id="range"> 
+                   <p>Selecione o número de convidados</p>
+                   <label for="number">Convidados</label>
+                   <input id="num-convidados" value="50" type="number" min="30" max="100">
+                   <p id="valor-pacote-encantos"></p>
+                </div>
+                </div>
+                <div id="pacote-superencantos">
+                    <h2 color= class="texto-pacotes">Pacote Super Encantos</h2>
+                    <img id="img-pacotes" alt="imagem pacote super encantos" src="assets/super-encantos.jpeg">
+                    <a href="https://api.whatsapp.com/send?phone=554198872091&text=Tenho%20interessee%20nos%20pacotes!" target="_blank" id="btn-superencantos">Tenho interesse</a>
+                </div> 
+            </article>
+            <h4 id="txt-ampliar">Passe o mouse para ampliar a imagem</h4>    
+           
+           
+             <article id="espaço-container">
+            <h2 id="txt-espaço">Nosso Espaço</h2>
+            <a id="a-espaço"href="https://www.instagram.com/encantos_eventos/" target="_blank">Clique para ver mais imagens</a>
+                    <img class="img-espaço" id="img1" src="assets/imagem1.jpg" alt="img1">
+                    <img class="img-espaço" id="img2"src="assets/imagem 2.jpg" alt="img1">
+                    <img class="img-espaço" id="img3"src="assets/imagem3.jpg" alt="img1">
+                </div> 
+                </article> 
+
+            <article id="email-submit">
+                <h3>Insira seu email para receber atualizações</h3>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" placeholder="Insira o seu E-mail" type="email">
+                    <input id="submit" type="submit" value="Receba Atualizações!">
+                </form>
+            </article>
+         </section>
+         <script src="script.js"></script>
+    </main>
+</body>
+<footer class="footer">    
+    <div id="footer-container">
+        <div id="endereço-footer">
+            <h3>Endereço</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.4266311827478!2d-49.309451417389255!3d-25.457425896050676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3a1ee55add1%3A0x4e1e9c8c64dc9a4e!2sSal%C3%A3o%20de%20Festa%20Infantil%20Encantos!5e0!3m2!1spt-BR!2sbr!4v1656976180176!5m2!1spt-BR!2sbr" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="redes-sociais">
+            <h3 id="titulo-redes-footer">Redes Sociais</h3>
+            <ul>
+            <li><a href="https://www.facebook.com/buffetinfantilencantos" target="_blank"><img src="assets/icon-facebook.png">Facebook Encantos</a></li>
+            <li><a href="https://www.instagram.com/encantos_eventos/" target="_blank"><img src="assets/icon-instagram.png">encantos_eventos</a></li>
+            </ul>
+        </div>
+        <div id="contato-footer">
+            <h3 id="titulo-contato-footer">Contato</h3>
+            <ul>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=554198872091&text=Tenho%20interessee%20nos%20pacotes!"><img src="assets/icon-whatsapp.png">(41))</a></li>
+                <li><a target="_blank" href="mailto:buffetinfantilencantos@outlook.com" ><img src="assets/icon-email.svg">buffetinfantil<br>encantos@outlook.com</a></li>
+                <li><a target="_blank" href="tel:+55413018-5995"><img src="assets/icon-call.svg">(41)3018-5995</a></li>
+            </ul>
+        </div>
+        <div id="serviços-footer">
+            <h3 id="titulo-serviços-footer">Serviços</h3>
+            <ul>
+                <li><a href="#pacote-encantos">Festa Encantos</a></li>
+                <li><a href="#pacote-superencantos">Festa Super Encantos</a></li>
+            </ul>
+        </div>
+        <div id="creditos">
+        </div>
+    </div>
+ </footer>
+</html>

@@ -1,0 +1,335 @@
+body{
+    background-color: rgba(231, 229, 229, 0.967);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    margin: 0px 20px 0px 20px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#header-img{
+    width: 25%;
+}
+.header-img{
+    margin-right: auto;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.nav-bar{
+    margin-right: 20px;
+    position: fixed;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 4px 8px 4px 8px;
+    border: 2px solid rgb(156, 156, 156);
+    background-color: rgb(159, 191, 209);
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    cursor: pointer;
+}
+.nav-bar li a:hover{
+    color: white;
+    background-color: rgb(156, 156, 156);
+}
+#email-submit h3{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 300;
+}
+#email-submit{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius:2px;
+    width: 350px;
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#form #email{
+    width: 250px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+#form #email:hover{
+    border: 2px solid black;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+#form #submit{
+    width: 150px;
+    background-color: rgb(224, 224, 224);
+    height: 30px;
+    border: 2px solid rgb(149, 149, 149);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+#form #submit:hover{
+    width: 170px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 16px;
+    box-shadow: 8px 8px 20px black;
+
+}
+
+
+#video-container{
+    display: flex;
+    justify-content: center;
+}
+#pacotes{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    transition: 0.5s;
+}
+.texto-pacotes{
+    text-align: center;
+}
+#pacote-encantos{
+    border-top: 2px solid grey;
+    margin: 5px;
+    cursor: pointer;
+}
+#pacote-encantos h2{
+color:rgb(111, 179, 216);
+}
+#pacote-superencantos{
+    border-top: 2px solid grey;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#pacote-superencantos h2{
+    color: rgb(185, 131, 236);
+}
+#img-pacotes{
+    height: 400px;
+    transition: 0.5s;
+}
+#img-pacotes:hover{
+    height: 800px;
+    transition: 0.5s;
+}
+#btn-encantos{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 140px;  
+    height: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;  
+    background-color: rgb(224, 224, 224);
+    border-radius: 3px;
+    border: 2px solid rgb(111, 179, 216);
+    color: rgb(111, 179, 216);
+    padding: 5px;
+    transition: 0.4s;
+}
+#btn-superencantos{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 140px;  
+    height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    background-color: rgb(224, 224, 224);
+    border-radius: 3px;
+    color: rgb(185, 131, 236);
+    border: 2px solid rgb(185, 131, 236);
+    padding: 5px;
+    transition: 0.4s;
+
+}
+#btn-encantos:hover{
+    box-shadow: 8px 8px 50px 08px rgb(111, 179, 216);
+    transition: 0.4s;
+
+}
+#btn-superencantos:hover{
+    box-shadow: 8px 8px 50px 08px rgb(185, 131, 236);
+    transition: 0.4s;
+}
+
+#txt-ampliar{
+    text-align: center;
+    font-weight: 100;
+    margin: 0px;
+    font-size: 12px;
+}
+#espaço-container h2{
+    margin: 0px;
+}
+#img1{
+    grid-area: principal;
+    width: 405px;
+    border: 2px solid rgb(111, 179, 216);
+    height: 250px;
+    border-radius: 3px;
+    transition: 0,5s;
+
+}
+
+#img2{
+    border-radius: 3px;
+    border: 2px solid rgb(111, 179, 216);
+    grid-area: segunda;
+}
+
+#img3{
+    border-radius: 3px;
+    grid-area: terceira, segunda, terceira;
+    border: 2px solid rgb(111, 179, 216);
+}
+#a-espaço{
+    grid-area:anchor;
+    text-align: center;
+    border: solid 1px black;
+    background-color: lightgrey;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    width: 280px;
+    transition: 0.4s;
+    justify-self: center;
+}
+#a-espaço:hover{
+    background-color: rgb(198, 196, 196);
+    border: solid 2px black;
+    box-shadow: 2px 2px 20px black;
+    width: 350px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+#txt-espaço{
+    grid-area: texto;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(111, 179, 216);
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    border-radius: 1px;
+}
+#espaço-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: 
+    "texto texto"
+    "anchor anchor"
+    "principal principal"
+    "segunda terceira";
+    justify-items: stretch;
+    gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img-espaço{
+    height: 150px;
+    width: 200px;
+}
+
+#footer-container{
+    background-color: rgb(252, 215, 220);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#footer-container h3{
+    text-align: center;
+}
+#footer-container a:hover{
+    text-decoration: none;
+    background-color: pink;
+    color: black;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+#redes-sociais{
+    width: auto;   
+    text-align: left; 
+    align-items: end;
+    padding-right: 10px;
+}
+#redes-sociais a img{ 
+    width: 30px;
+    position: relative;
+    top: 10px;
+
+}
+#redes-sociais a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+    display: block;
+}
+#redes-sociais a:hover{
+    text-decoration: none;
+    background-color: pink;
+    color: black;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+#contato-footer{
+    width: 200px;
+}
+#contato-footer a img{
+    width: 30px;
+    position: relative;
+    top: 8px;
+}
+#contato-footer a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#endereço-footer{
+    width: 200px;
+}
+#serviços-footer li{
+    margin: 5px;
+}
+#serviços-footer a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
