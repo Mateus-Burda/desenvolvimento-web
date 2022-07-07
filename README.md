@@ -1,2 +1,5 @@
 - 👋 Olá, acesse o link abaixo para visualizar o resultado final.
-- 👀 https://raw.githack.com/Mateus-Burda/Mateus-Burda/7649293000cc6ed9792fdfa6d942f3980e349891/DesenvolvimentoWeb/LandingPageFreecodecamp/index.html
+- https://mateus-burda.github.io/desenvolvimento-web/
+- Esse é o meu primeiro projeto em desenvolvimento web.
+- Estou satisfeito com o resultado considerando o tempo gasto.
+- Estou feliz com resultado da calculadora de valor feita no JavaScript, pois eu não tinha conhecimento nenhum antes de fazer.
