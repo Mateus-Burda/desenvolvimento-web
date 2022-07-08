@@ -84,7 +84,7 @@ ul{
 }
 
 #form #submit{
-    width: 150px;
+    width: 170px;
     background-color: rgb(224, 224, 224);
     height: 30px;
     border: 2px solid rgb(149, 149, 149);
@@ -93,11 +93,12 @@ ul{
     cursor: pointer;
     font-size: 13px;
     transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 10px;
 }
 
 #form #submit:hover{
-    width: 170px;
+    width: 210px;
     height: 40px;
     transition: 0.3s;
     font-size: 16px;
@@ -200,9 +201,9 @@ color:rgb(111, 179, 216);
 }
 #img1{
     grid-area: principal;
-    width: 405px;
+    width: 605px;
     border: 2px solid rgb(111, 179, 216);
-    height: 250px;
+    height: 350px;
     border-radius: 3px;
     transition: 0,5s;
 
@@ -222,8 +223,10 @@ color:rgb(111, 179, 216);
 #a-espaço{
     grid-area:anchor;
     text-align: center;
-    border: solid 1px black;
+    border: solid 2px darkgrey;
+    border-radius: 2px;
     background-color: lightgrey;
+    box-shadow: 2px 2px 5px grey;
     text-decoration: none;
     color: black;
     font-weight: 400;
@@ -251,7 +254,7 @@ color:rgb(111, 179, 216);
 }
 #espaço-container{
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 300px 300px;
     grid-template-areas: 
     "texto texto"
     "anchor anchor"
@@ -266,14 +269,15 @@ color:rgb(111, 179, 216);
 }
 
 .img-espaço{
-    height: 150px;
-    width: 200px;
+    height: 225px;
+    width: 300px;
 }
 
 #footer-container{
     background-color: rgb(252, 215, 220);
     display: flex;
     flex-direction: row;
+    border-top: 1px solid grey;
     justify-content: space-evenly;
 }
 #footer-container h3{
