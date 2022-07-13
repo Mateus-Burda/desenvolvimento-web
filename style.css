@@ -4,26 +4,29 @@ body{
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 header{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 14%;
     position: fixed;
     border-bottom:2px solid rgb(156, 156, 156);
     background-color: rgba(231, 229, 229, 0.879);
     top: 0;
 }
 #header-img{
-    width: 125px;
+    height: 6rem;
+    margin: 5px;
 }
 .header-img{
-    margin: 0px auto;
+    margin: 0px;
+    position: relative;
+    top: 5px;
 }
-
 .nav-bar ul{
     display: flex;
 }
@@ -35,7 +38,6 @@ ul{
 }
 .nav-bar{
     margin-right: 20px;
-    position: fixed;
 }
 .nav-bar li a{
     text-decoration: none;
@@ -54,16 +56,12 @@ ul{
     background-color: rgb(156, 156, 156);
 }
 
-#video-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
-}
 #pacotes{
     display: flex;
     margin-top: 125px;
     justify-content: center;
     transition: 0.5s;
+    flex-wrap: wrap;
 }
 .texto-pacotes{
     text-align: center;
@@ -90,9 +88,11 @@ color:rgb(111, 179, 216);
 .img-pacotes{
     height: 600px;
     transition: 0.5s;
+    max-height: 100%;
 }
 .img-pacotes:hover{
     height: 800px;
+    width: auto;
     transition: 0.5s;
     
 }
@@ -145,28 +145,48 @@ color:rgb(111, 179, 216);
     margin: 0px;
     font-size: 12px;
 }
+
+#espaço-container{
+    width: 60%;
+    display: grid;
+    margin: 0px auto;
+    grid-template-columns: 47% 47%;
+    grid-template-areas: 
+    "texto texto"
+    "anchor anchor"
+    "principal principal"
+    "segunda terceira";
+    column-gap: 5px;
+    row-gap: 5px;
+}
 #espaço-container h2{
     margin: 0px;
 }
 #img1{
     grid-area: principal;
-    width: 605px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
     border: 2px solid rgb(111, 179, 216);
-    height: 350px;
     border-radius: 3px;
     transition: 0,5s;
-
 }
 
 #img2{
+    width: 100%;
     border-radius: 3px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     border: 2px solid rgb(111, 179, 216);
     grid-area: segunda;
 }
 
 #img3{
     border-radius: 3px;
-    grid-area: terceira, segunda, terceira;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    grid-area: terceira;
     border: 2px solid rgb(111, 179, 216);
 }
 #a-espaço{
@@ -201,26 +221,7 @@ color:rgb(111, 179, 216);
     border-bottom: 2px solid;
     border-radius: 1px;
 }
-#espaço-container{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-areas: 
-    "texto texto"
-    "anchor anchor"
-    "principal principal"
-    "segunda terceira";
-    justify-items: stretch;
-    gap: 5px;
-    row-gap: 5px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
-.img-espaço{
-    height: 225px;
-    width: 300px;
-}
 
 #calculadora-encantos{
     border: 1px solid grey;
@@ -271,6 +272,8 @@ color:rgb(111, 179, 216);
 footer{
     background-color: rgb(244, 209, 232);
     border-top: 2px solid rgb(181, 132, 166);
+    width: 100%;
+    margin-top: 10px;
 }
 
 #email-submit h3{
@@ -370,3 +373,25 @@ footer{
     top: 6px;
 }
 
+/* MEDIA QUERIES*/
+@media (orientation: portrait){
+    header{
+        height: 7%;
+    }
+    .nav-bar li a{
+        font-size: .7rem;
+    }
+    #header-img{
+        height: 4rem;
+    }
+    #pacotes{
+        margin-top: 80px;
+    }
+    .img-pacotes{
+        width: 80%;
+        height: auto;
+    }
+    #espaço-container{
+        width: 80%;
+    }
+}
