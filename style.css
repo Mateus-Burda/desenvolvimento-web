@@ -138,6 +138,10 @@ color:rgb(111, 179, 216);
     box-shadow: 8px 8px 50px 08px rgb(185, 131, 236);
     transition: 0.4s;
 }
+#checkbox-container{
+    display: flex;
+    flex-direction: column;
+} 
 
 #txt-ampliar{
     text-align: center;
